@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل تطبيق أذكار عرفة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .brand-color {
+            color: #0F766E;
+        }
+        .brand-bg {
+            background-color: #0F766E;
+        }
+        .brand-bg-hover:hover {
+            background-color: #0d635c;
+        }
+        /* تخصيص مؤشرات السلايدر السفلية لتتناسب مع هوية التطبيق */
+        .swiper-pagination-bullet-active {
+            background: #0F766E !important;
+            width: 20px !important;
+            border-radius: 4px !important;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="relative bg-white overflow-hidden border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+            
+            <div class="w-full md:w-1/2 text-center md:text-right space-y-6">
+                <div class="inline-flex items-center gap-2 bg-teal-50 text-teal-800 px-4 py-1.5 rounded-full text-sm font-bold">
+                    <i class="fa-solid fa-star text-amber-500"></i>
+                    <span>متاح الآن للتحميل مجاناً</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+                    تطبيق <span class="brand-color">أذكار يوم عرفة</span>
+                </h1>
+                
+                <p class="text-lg text-gray-600 max-w-xl leading-relaxed">
+                    تنظيم ذكي للأوراد والأذكار، يدعم الاتصال اللاسلكي بخاتم التسبيح الذكي.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                    <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 brand-bg brand-bg-hover text-white font-bold px-8 py-3.5 rounded-2xl shadow-lg shadow-teal-700/20 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-android text-2xl"></i>
+                        <div class="text-right">
+                            <p class="text-xs font-normal opacity-80">تحميل لأجهزة</p>
+                            <p class="text-base font-bold -mt-1">أندرويد (APK)</p>
+                        </div>
+                    </a>
+
+                    </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center relative">
+                <div class="absolute w-72 h-72 bg-teal-100 rounded-full blur-3xl opacity-60 top-10 right-10 -z-10"></div>
+                
+                <div class="bg-teal-700 p-3 rounded-[40px] shadow-2xl border-4 border-gray-800 w-full max-w-[290px] relative">
+                    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-gray-800 rounded-b-xl z-20"></div>
+                    
+                    <div class="swiper mySwiper rounded-[32px] overflow-hidden aspect-[9/19] bg-white">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/screenshot_main.jpg" alt="الشاشة الرئيسية للتطبيق" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-10 text-center z-10">
+                                    <p class="text-white text-sm font-bold">الشاشة الرئيسية للأذكار</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/screenshot_student.jpg" alt="واجهة السور" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-10 text-center z-10">
+                                    <p class="text-white text-sm font-bold">واجهة السور</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide relative">
+                                <img src="assets/images/screenshot_teacher.jpg" alt="لوحة تحكم الأستاذ" class="w-full h-full object-cover">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-10 text-center z-10">
+                                    <p class="text-white text-sm font-bold">حفظ التقدم</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="swiper-pagination !bottom-14"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-16 lg:px-8">
+        <h2 class="text-3xl font-black text-center text-gray-900 mb-12">ماذا يقدم لك التطبيق؟</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center">
+                    <i class="fa-solid fa-ring brand-color text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">ربط الخاتم الذكي</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    يتصل التطبيق تلقائياً عبر البلوتوث بخاتم التسبيح الذكي لإنقاص العدادات وتقليب الصفحات عن بعد بسلاسة وتلقائية.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
+                    <i class="fa-solid fa-sliders text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">تحكم سهل ومريح</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                   يمكنك التحكم في الاوراد وتقليب الصفحات والعدادات بشكل سلسل وسهل باكثر من وسيلة تحكم.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center">
+                    <i class="fa-solid fa-clock text-amber-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900">عدادات تنازلية دقيقة</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    متابعة حية للوقت المتبقي حتى أذان مغرب يوم عرفة المشهود، مما يحفز المستخدم على استغلال كل دقيقة.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <p>© 2026 جميع الحقوق محفوظة لتطبيق أذكار يوم عرفة.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,                         // جعل الحركة دائرية لا تنتهي
+            spaceBetween: 0,                    // المسافة بين شاشات العرض
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,                    // الانتقال التلقائي كل 3.5 ثوانٍ
+                disableOnInteraction: false,   // استمرار الحركة التلقائية حتى بعد لمس الشاشة
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,                // إمكانية الانتقال عبر الضغط على النقاط
+            },
+        });
+    </script>
+</body>
+</html>
